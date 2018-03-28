@@ -34,4 +34,9 @@ public class AccountService {
     public void deleteSession(String sessionId) {
         sessionIdToProfile.remove(sessionId);
     }
+
+    public boolean userExist(String login){
+        return this.loginToProfile.containsKey(login);
+    }
+
 }

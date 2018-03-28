@@ -13,6 +13,11 @@ public class UserProfile {
         this.pass = pass;
         this.email = email;
     }
+    public UserProfile(String login, String password){
+        this.login = login;
+        this.pass = password;
+        email = null;
+    }
 
     public UserProfile(String login) {
         this.login = login;
